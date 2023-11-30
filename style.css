@@ -292,6 +292,10 @@ li.book-btn a:hover {
   padding: 35px 0;
 }
 
+.section-ym-images {
+  padding: 0 20px;
+}
+
 .section-ym-images img {
   border-radius: 12px;
   margin-top: 25px;
@@ -319,6 +323,12 @@ li.book-btn a:hover {
 
 footer {
   background: #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
 }
 
 footer a {
@@ -371,14 +381,20 @@ footer img {
 
   .section-ym-images {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 20px;
+    padding: 100px 40px;
   }
 
   .section-ym-images img {
-    height: 200px;
-    border-radius: 12px;
+    height: 400px;
+    border-radius: 20px;
     margin-top: 0;
+  }
+
+  .section-ym-images :nth-child(even) {
+    display: none;
   }
 
   .price-img {
@@ -418,15 +434,23 @@ footer img {
   }
 
   .section-ym-images {
+    max-width: 1280px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 50px 0;
   }
 
-  /* .section-ym-images img{
-        width: 32%;
-        border-radius: 12px;
-    } */
+  .section-ym-images :nth-child(even) {
+    display: block;
+  }
+
+  .section-ym-images img {
+    height: 200px;
+    border-radius: 12px;
+  }
 
   .section-contents .container {
     display: flex;
